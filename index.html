@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Paint 3.0</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="controller">
+        <input type="color" class="controller__input_rgb" />
+        <button class="btn controller__rgb">RGB mode</button>
+        <button class="btn controller__rainbow">Rainbow mode</button>
+        <button class="btn controller__eraser">Eraser</button>
+        <button class="btn controller__clear active">Clear</button>
+        <span id="size-value">8x8</span>
+        <input
+          type="range"
+          id="size"
+          name="size"
+          min="1"
+          max="5"
+          step="1"
+          list="sizes"
+          value="1"
+        />
+        <datalist id="sizes">
+          <option value="1">8x8</option>
+          <option value="2">16x16</option>
+          <option value="3">32x32</option>
+          <option value="4">64x64</option>
+          <option value="5">128x128</option>
+        </datalist>
+      </div>
+      <div class="grid">
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+        <div class="grid__items"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

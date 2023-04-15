@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #fffdfa;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  gap: 8rem;
+}
+
+.controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 2rem;
+}
+
+.controller__input_rgb {
+  width: 8rem;
+  height: 8rem;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #fff, inset 0 0 0 1px #000;
+}
+
+#size-value {
+  transform: translateY(5px);
+  font-size: 1.6rem;
+}
+
+.controller .btn {
+  padding: 1.5rem 0;
+  width: 22rem;
+
+  border-style: none;
+  border-radius: 10px;
+
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+.active {
+  background-color: #000;
+  color: white;
+  transition: all .3s;
+}
+
+.grid {
+  display: grid;
+  height: 800px;
+  width: 800px;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+}
